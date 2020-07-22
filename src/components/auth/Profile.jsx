@@ -12,9 +12,11 @@ const Profile = ({ isAuthenticated }) => {
       {isAuthenticated ? (
         <div>
           <div classeName="title-profile">
-            <h1 classeName="title-profile-text">Profile</h1>
+            <h1 classeName="title-profile-text">
+              Profile <Logout />
+            </h1>
           </div>
-          <Logout />{" "}
+          <UserDashboard />
         </div>
       ) : (
         <Redirect to="/login"></Redirect>
