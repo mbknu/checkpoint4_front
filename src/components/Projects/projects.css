@@ -1,0 +1,157 @@
+.container-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+h3 {
+  text-decoration: underline;
+}
+hr {
+  width: 500px;
+  border-color: #ff6961;
+  margin-top: 4vh;
+  margin-bottom: 8vh;
+}
+
+.projects-nrgybox {
+  height: 550px;
+  width: 80vw;
+  margin-top: 15px;
+}
+
+.wrapper-caremind {
+  font-weight: 1000;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.projects-caremind {
+  height: 550px;
+  width: 80vw;
+  margin-top: 10px;
+}
+.title-caremind {
+  height: 100px;
+  width: 10vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+
+.player-caremind {
+  display: flex;
+  align-items: center;
+}
+.movie {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.text-caremind {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.projects-jumanjs {
+  height: 550px;
+  width: 80vw;
+  margin-top: 15px;
+}
+
+.title-nrgybox {
+  height: 100px;
+  width: 10vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+
+.title-jumanjs {
+  height: 100px;
+  width: 10vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+.text-jumanjs {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.player-jumanjs {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.text-nrgybox {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.player-nrgybox {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.wrapper-wildalorian {
+  font-weight: 1000;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.projects-wildalorian {
+  height: 550px;
+  width: 80vw;
+  margin-top: 15px;
+}
+.title-wildalorian {
+  height: 100px;
+  width: 10vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+
+.player-wildalorian {
+  display: flex;
+  align-items: center;
+}
+.text-wildalorian {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
