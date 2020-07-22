@@ -1,0 +1,26 @@
+.title-register {
+  display: flex;
+  justify-content: center;
+  color: #ff6961;
+}
+.closeModal {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.RegistrationForm {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2-register {
+  color: white;
+  text-decoration: underline #ff6961;
+}
