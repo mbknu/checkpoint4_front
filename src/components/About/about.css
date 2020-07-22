@@ -1,0 +1,18 @@
+.container-about {
+  border: 5px solid blue;
+  height: 60vh;
+  width: 80vw;
+  margin-top: 100px;
+}
+.title-name {
+  border: 5px solid yellow;
+  width: 80vw;
+  justify-content: center;
+  display: flex;
+  text-decoration: underline #ff6961;
+}
+.cv-michael {
+  border: 5px solid green;
+  height: 80vh;
+  width: 80vw;
+}

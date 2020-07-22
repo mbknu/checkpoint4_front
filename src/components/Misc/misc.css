@@ -1,0 +1,111 @@
+.container-misc {
+  margin-top: 100px;
+}
+
+.title-misc-right {
+  height: 100px;
+  width: 33.3vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+.title-misc-left {
+  height: 100px;
+  width: 33.3vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #ff6961;
+  height: 0;
+  line-height: 50px;
+}
+.misc-text {
+  margin-bottom: 5px;
+}
+.misc-wrapper {
+  margin-bottom: 100px;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.misc-button {
+  margin-top: 25px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+.button-misc-one {
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 320px;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 60px;
+}
+
+.button-misc-one:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 2px solid transparent;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.button-misc-one:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 2px solid transparent;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+.button-misc-one:hover:before {
+  height: 300px;
+  width: 320px;
+  border: 2px solid #ff6961;
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
+.button-misc-one:hover:after {
+  height: 300px;
+  width: 320px;
+  border: 2px solid #ff6961;
+  border-left: none;
+  border-top: none;
+  transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
+
+.spotify {
+  height: 238px;
+  width: 200px;
+}
+.chuck {
+  height: 200px;
+  width: 200px;
+}
+.facts {
+  height: 238px;
+  width: 200px;
+}
+.hide-modal {
+  margin-top: 5px;
+}

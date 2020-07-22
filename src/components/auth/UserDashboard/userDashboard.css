@@ -1,0 +1,10 @@
+.team-banner {
+  width: 360px;
+  height: 213px;
+  border-radius: 46px;
+  border: 6px solid #ff6961;
+  margin: 15px;
+}
+.container-teaminfo {
+  display: flex;
+}

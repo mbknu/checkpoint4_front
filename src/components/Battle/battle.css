@@ -1,0 +1,90 @@
+.container-battle {
+  margin-top: 100px;
+  width: 80vw;
+  height: 160vh;
+}
+.battle-timer {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.countdown {
+  grid-area: countdown;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 150px));
+  grid-gap: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+.countdown div:not(:last-child) {
+  border-right: 2px solid #ff6961;
+}
+
+.countdown-segment {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.countdown-segment-number {
+  display: flex;
+  justify-content: center;
+  font-size: 65px;
+  font-weight: 700;
+  transition: all 0.2s ease-in;
+}
+
+.countdown-segment-caption {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.battle-logo {
+  height: 40vh;
+  width: 80vw;
+}
+.text-battle {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.button-battle {
+  width: 41vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-battle-description {
+  display: block;
+  justify-content: center;
+  font-size: 18px;
+}
+.login-battle {
+  display: flex;
+  justify-content: center;
+}
+.btn-redirect-login {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  background-color: #ff6961;
+  color: white;
+  border-radius: 6px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+.btn-redirect-login:hover {
+  font-size: 20px;
+  height: 40px;
+  background-color: white;
+  color: #ff6961;
+  border-radius: 6px;
+  box-shadow: none;
+  border: none;
+  transition: 0.3s all;
+}
