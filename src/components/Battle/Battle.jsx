@@ -3,14 +3,18 @@ import Countdown from "./Countdown";
 import LogoBattle from "./lotties/LogoBattle";
 import Register from "../auth/Register/Register";
 import { useHistory } from "react-router-dom";
+import { connect } from "react-redux";
 
 import "./battle.css";
 
-function Battle() {
+const Battle = ({ isAuthenticated }) => {
   const history = useHistory();
 
   const handleClickLogin = () => {
     history.push("/login");
+  };
+  const handleClickProfile = () => {
+    history.push("/profile");
   };
 
   return (
@@ -37,10 +41,22 @@ function Battle() {
         <button className="btn-redirect-login" onClick={handleClickLogin}>
           Se connecter
         </button>
-        <Register />
+        {isAuthenticated ? (
+          <button className="btn-redirect-login" onClick={handleClickProfile}>
+            Mon profile
+          </button>
+        ) : (
+          <Register />
+        )}
       </div>
     </div>
   );
-}
+};
 
-export default Battle;
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.auth.isAuthenticated,
+    error: state.error,
+  };
+};
+export default connect(mapStateToProps, { Battle })(Battle);
