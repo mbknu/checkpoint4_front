@@ -38,9 +38,14 @@ const Battle = ({ isAuthenticated }) => {
         </p>
       </div>
       <div className="login-battle">
-        <button className="btn-redirect-login" onClick={handleClickLogin}>
-          Se connecter
-        </button>
+        {isAuthenticated ? (
+          ""
+        ) : (
+          <button className="btn-redirect-login" onClick={handleClickLogin}>
+            Se connecter
+          </button>
+        )}
+
         {isAuthenticated ? (
           <button className="btn-redirect-login" onClick={handleClickProfile}>
             Mon profile

@@ -9,13 +9,23 @@ const TeamsInfos = () => {
     );
   }, []);
   return (
-    <>
-      {projects.map((d) => (
-        <div>
-          {d.name} et {d.description}
+    <div className="container-teaminfo">
+      {projects.map((e) => (
+        <div className="team-wrapper">
+          <div className="team-name">{e.name}</div>
+          <br />
+          <img
+            src={e.imageteam}
+            className="team-banner"
+            alt="team-banner"
+          ></img>
+          <br />
+          <div className="team-description">{e.description}</div>
+          <br />
+          <br />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

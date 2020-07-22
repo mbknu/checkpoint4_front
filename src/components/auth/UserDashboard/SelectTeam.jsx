@@ -10,9 +10,9 @@ const TeamsInfos = () => {
   }, []);
   return (
     <>
-      {projects.map((d) => (
+      {projects.map((e) => (
         <div>
-          {d.name} et {d.description}
+          {e.name} et {e.description}
         </div>
       ))}
     </>

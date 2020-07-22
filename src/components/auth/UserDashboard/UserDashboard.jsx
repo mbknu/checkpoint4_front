@@ -1,12 +1,9 @@
 import React from "react";
-import TeamsInfos from "./TeamsInfos";
+// import TeamsInfos from "./TeamsInfos";
+import "./userDashboard.css";
 
 const UserDashboard = () => {
-  return (
-    <>
-      <TeamsInfos />
-    </>
-  );
+  return <>{/* <TeamsInfos /> */}</>;
 };
 
 export default UserDashboard;

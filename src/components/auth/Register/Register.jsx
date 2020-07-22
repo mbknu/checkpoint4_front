@@ -86,7 +86,7 @@ const Register = ({ register, isAuthenticated }) => {
             >
               <div className="modalHeader">
                 <div className="closeModal" onClick={handleCloseModal}>
-                  <p>X</p>
+                  <p style={{ color: "white" }}>X</p>
                 </div>
                 <div className="title-register">
                   <h1>Créer mon profil</h1>
