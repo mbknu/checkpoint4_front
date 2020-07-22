@@ -27,10 +27,12 @@ const Login = ({ email, password, login, isAuthenticated }) => {
       {isAuthenticated && <Redirect to="/profile"> </Redirect>}
       <div className="login">
         <div className="form">
-          <h2 style={{ color: "white" }}>Login</h2>
+          <h2 style={{ color: "white", textDecoration: "underline #ff6961" }}>
+            Login
+          </h2>
           <div className="input">
             <div className="inputBox">
-              <label>Email</label>
+              <label style={{ color: "white" }}>Email</label>
               <input
                 type="text"
                 name=""
@@ -39,7 +41,7 @@ const Login = ({ email, password, login, isAuthenticated }) => {
               ></input>
             </div>
             <div className="inputBox">
-              <label>Password</label>
+              <label style={{ color: "white" }}>Password</label>
               <input
                 type="password"
                 name=""
