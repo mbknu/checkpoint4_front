@@ -13,13 +13,12 @@ const Profile = ({ isAuthenticated }) => {
         <div>
           <div classeName="title-profile">
             <h1 classeName="title-profile-text">
-              Profile <br />
+              <span style={{ color: "#ff6961" }}>Pro</span>file <Logout />
+              <br />
             </h1>
           </div>
           <UserDashboard />
-          <div className="logout-btn">
-            <Logout />
-          </div>
+          <div className="logout-btn"></div>
         </div>
       ) : (
         <Redirect to="/login"></Redirect>

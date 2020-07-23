@@ -8,3 +8,10 @@
 .container-teaminfo {
   display: flex;
 }
+.info-text {
+  width: 370px;
+  font-size: 18px;
+}
+.info-user-text {
+  text-decoration: underline 1px #ff6961;
+}
