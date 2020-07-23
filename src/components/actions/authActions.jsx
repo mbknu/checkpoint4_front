@@ -12,18 +12,17 @@ import {
 } from "./types";
 
 //Check token & load user
-export const loadUser = (email, password) => (dispatch, getState) => {
+export const loadUser = (token) => (dispatch, getState) => {
   //USer loading
   dispatch({ type: USER_LOADING });
-  // Request body
-  const body = JSON.stringify(email, password);
+  const config = {
+    headers: {
+      Authorization: `Basic ${token}`,
+    },
+  };
 
   axios
-    .post(
-      "http://localhost:3000/api/auth/user/profile",
-      body,
-      tokenConfig(getState)
-    )
+    .post("http://localhost:3000/api/auth/profile", null, config)
     .then((res) =>
       dispatch({
         type: USER_LOADED,
@@ -31,9 +30,10 @@ export const loadUser = (email, password) => (dispatch, getState) => {
       })
     )
     .catch((err) => {
-      dispatch(returnErrors(err.response.data, err.response.status));
+      const isAuthenticated = false;
       dispatch({
         type: AUTH_ERROR,
+        payload: isAuthenticated,
       });
     });
 };
@@ -47,8 +47,9 @@ export const login = (email, password) => (dispatch) => {
   };
   // Request body
   const body = JSON.stringify(email, password);
+  console.log(body);
   axios
-    .post("http://localhost:3000/api/user/login", body, config)
+    .post("http://localhost:3000/api/auth/login", body, config)
     .then((res) =>
       dispatch({
         type: LOGIN_SUCCESS,
@@ -56,9 +57,6 @@ export const login = (email, password) => (dispatch) => {
       })
     )
     .catch((err) => {
-      dispatch(
-        returnErrors(err.response.data, err.response.status, "LOGIN_FAIL")
-      );
       dispatch({
         type: LOGIN_FAIL,
       });
@@ -98,7 +96,7 @@ export const register = (lastname, firstname, email, password, nickname) => (
   // Request body
   const body = JSON.stringify(lastname, firstname, nickname, email, password);
   axios
-    .post("http://localhost:3000/api/user/register", body, config)
+    .post("http://localhost:3000/api/auth/register", body, config)
     .then((res) =>
       dispatch({
         type: REGISTER_SUCCESS,

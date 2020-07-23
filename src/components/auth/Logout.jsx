@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
+import "./logout.css";
 
 const logoutStyle = {
   margin: "6px",
@@ -11,6 +12,7 @@ const logoutStyle = {
   borderradius: "5px",
   boxshadow: "none",
   border: "none",
+  background: "transparent",
   outline: "none",
 };
 
