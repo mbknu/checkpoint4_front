@@ -29,6 +29,41 @@
   border: none;
   transition: 0.3s all;
 }
+.btn-facts-add {
+  margin: 6px;
+  width: 80px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.btn-facts-add:hover {
+  font-size: 18px;
+  background-color: #ff6961;
+  color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  transition: 0.3s all;
+}
 .facts-title {
-  color: #ff6961;
+  text-decoration: underline #ff6961;
+}
+.add-fact {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputBoxFact {
+  background: "black";
+  width: "150px";
+  border: "1px solid #ff6961";
 }

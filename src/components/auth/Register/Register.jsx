@@ -23,8 +23,8 @@ const Register = ({ register, isAuthenticated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const patient = { lastname, firstname, nickname, email, password };
-    register(patient);
+    const user = { lastname, firstname, nickname, email, password };
+    register(user);
     setShowModal(false);
   };
 
@@ -105,6 +105,7 @@ const Register = ({ register, isAuthenticated }) => {
                     variant="outlined"
                     value={firstname}
                     className="input-register"
+                    required
                     onChange={handleChangeFirstname}
                   />
                   <h2 className="h2-register">Nom :</h2>
@@ -114,6 +115,7 @@ const Register = ({ register, isAuthenticated }) => {
                       variant="outlined"
                       className="input-register"
                       value={lastname}
+                      required
                       onChange={handleChangeLastname}
                     />
                   </div>
@@ -124,6 +126,7 @@ const Register = ({ register, isAuthenticated }) => {
                       variant="outlined"
                       className="input-register"
                       value={email}
+                      required
                       onChange={handleChangeEmail}
                     />
                   </div>
@@ -135,6 +138,7 @@ const Register = ({ register, isAuthenticated }) => {
                       className="input-register"
                       variant="outlined"
                       value={password}
+                      required
                       onChange={handleChangePassword}
                     />
                   </div>
@@ -145,6 +149,7 @@ const Register = ({ register, isAuthenticated }) => {
                       className="input-register"
                       variant="outlined"
                       value={nickname}
+                      required
                       onChange={handleChangeNickname}
                     />
                   </div>

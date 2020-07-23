@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Facts from "./Facts/Facts";
 import ChuckJokes from "./Chuck/ChuckJokes";
 import ReactTooltip from "react-tooltip";
+import InsertFacts from "./Facts/InsertFacts";
 
 import "./misc.css";
 import spotify from "../assets/image/spotify.png";
@@ -64,6 +65,7 @@ const Misc = () => {
           >
             Close
           </button>
+          <InsertFacts />
         </div>
       )}
       {isModalVisiblee && (
