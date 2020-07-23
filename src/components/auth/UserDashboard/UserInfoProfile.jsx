@@ -4,11 +4,11 @@ import { loadUser } from "../../actions/authActions";
 
 const UserInfoProfile = ({ loadUser, email, player, isAuthenticated }) => {
   useEffect(() => {
-    loadUser(localstorage.getItem("token"));
+    loadUser(localStorage.getItem("token"));
   }, []);
 
   let playerInfo;
-  if (localstorage.getItem("token") !== null) {
+  if (localStorage.getItem("token") !== null) {
     playerInfo = player.authdata.user[0];
   }
 
