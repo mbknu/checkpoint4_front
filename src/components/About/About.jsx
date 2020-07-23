@@ -33,6 +33,9 @@ function About() {
             <hr />
             <li>Restructurer l'aborescence de l'app en général</li>
             <hr />
+            <a href="https://codepen.io/BMMichael/pen/KKwoPBO" target="_blank">
+              My Wild Circus
+            </a>
           </ul>
         </div>
       </div>
