@@ -2,23 +2,15 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { loadUser } from "../../actions/authActions";
 
-const UserInfoProfile = ({ loadUser, email, player, isAuthenticated }) => {
+const UserInfoProfile = ({ loadUser, isAuthenticated, player }) => {
   useEffect(() => {
     loadUser(localStorage.getItem("token"));
   }, []);
-
-  let playerInfo;
-  if (localStorage.getItem("token") !== null) {
-    playerInfo = player.authdata.user[0];
-  }
-
   return (
     <div>
-      {player ? (
+      {isAuthenticated ? (
         <div className="info-content">
-          <div className="info-text">
-            <p>{playerInfo.nickname}</p>
-          </div>
+          <div className="info-text">{player && <p>{player.nickname}</p>}</div>
           <br />
         </div>
       ) : (
@@ -29,8 +21,9 @@ const UserInfoProfile = ({ loadUser, email, player, isAuthenticated }) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {
-    player: state.auth.user,
+    player: state.auth.user && state.auth.user.result[0],
     isAuthenticated: state.auth.isAuthenticated,
   };
 };
