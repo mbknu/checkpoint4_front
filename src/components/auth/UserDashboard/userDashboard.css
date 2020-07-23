@@ -1,12 +1,16 @@
 .team-banner {
-  width: 360px;
+  width: 700px;
   height: 213px;
   border-radius: 46px;
-  border: 6px solid #ff6961;
+  border: 6px solid white;
   margin: 15px;
 }
 .container-teaminfo {
   display: flex;
+  width: 60vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .info-text {
   width: 370px;
@@ -14,4 +18,14 @@
 }
 .info-user-text {
   text-decoration: underline 1px #ff6961;
+}
+.team-description {
+  font-size: 18px;
+}
+
+.team-name {
+  font-size: 36px;
+  color: #ff6961;
+  font-weight: 600;
+  text-decoration: underline white;
 }
