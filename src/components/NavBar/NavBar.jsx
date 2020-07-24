@@ -36,7 +36,7 @@ const NavBar = ({ isAuthenticated }) => {
         <Link className="a-links" style={liStyle} to="/projects">
           <li>Projects</li>
         </Link>
-        <Link className="a-links" style={liStyle} to="/about">
+        <Link className="a-links" style={liStyle} to="/todo">
           <li>TODO</li>
         </Link>
       </ul>

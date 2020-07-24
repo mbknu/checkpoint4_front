@@ -1,7 +1,10 @@
 .container-about {
-  height: 60vh;
+  height: 92vh;
   width: 80vw;
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
 }
 .title-name {
   width: 80vw;

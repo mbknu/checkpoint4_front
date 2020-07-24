@@ -9,7 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Misc from "./components/Misc/Misc";
 import Facts from "./components/Misc/Facts/Facts";
 import Battle from "./components/Battle/Battle";
-import About from "./components/About/About";
+import Todo from "./components/About/Todo.jsx";
 import Profile from "./components/auth/Profile";
 import ChuckJokes from "./components/Misc/Chuck/ChuckJokes";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/misc" component={Misc} />
           <Route path="/facts" component={Facts} />
           <Route path="/battle" component={Battle} />
-          <Route path="/about" component={About} />
+          <Route path="/todo" component={Todo} />
           <Route path="/profile" component={Profile} />
           <Route path="/chuck" component={ChuckJokes} />
         </Switch>
